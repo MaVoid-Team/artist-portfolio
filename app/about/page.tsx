@@ -23,19 +23,19 @@ export default function AboutPage() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">About the Artist</h1>
             <div className="space-y-3 md:space-y-4 text-sm sm:text-base text-muted-foreground">
               <p>
-                With over 15 years of artistic exploration, I've developed a distinctive style that blends traditional
+                With over 2 years of artistic exploration, I've developed a distinctive style that blends traditional
                 techniques with contemporary vision. My work explores the intersection of natural forms and human
                 emotion, creating pieces that resonate on both visual and emotional levels.
               </p>
-              <p>
+              {/* <p>
                 After studying at the Royal Academy of Arts, I established my studio in the heart of the Creative
                 District, where I continue to push the boundaries of my practice and explore new mediums and techniques.
-              </p>
-              <p>
+              </p> */}
+              {/* <p>
                 My work has been exhibited in galleries across Europe and North America, and is held in several private
                 collections. I'm particularly interested in the dialogue between artist and viewer, and how art can
                 create spaces for reflection and connection.
-              </p>
+              </p> */}
             </div>
           </motion.div>
 
