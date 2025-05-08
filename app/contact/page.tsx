@@ -32,7 +32,7 @@ export default function ContactPage() {
   }
 
   return (
-    <main className="container max-w-4xl py-12 md:py-24">
+    <main className="container max-w-4xl py-8 px-4 sm:px-6 md:py-12 lg:py-24">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -46,7 +46,7 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10 mt-12">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-10 mt-8 md:mt-12">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -119,7 +119,7 @@ export default function ContactPage() {
                 required
               />
             </div>
-            <Button type="submit" className="w-full">
+            <Button type="submit" className="w-full mt-2">
               Send Message
               <Send className="ml-2 h-4 w-4" />
             </Button>

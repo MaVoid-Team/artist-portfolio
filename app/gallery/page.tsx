@@ -20,7 +20,7 @@ export default function GalleryPage() {
         Gallery
       </motion.h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
         {artworks.map((artwork, index) => (
           <ArtworkCard key={index} artwork={artwork} index={index} onClick={() => setSelectedArtwork(artwork)} />
         ))}
@@ -48,7 +48,7 @@ function ArtworkCard({ artwork, index, onClick }) {
       whileHover={{ scale: 1.03 }}
       whileTap={{ scale: 0.98 }}
     >
-      <div className="relative overflow-hidden rounded-lg">
+      <div className="relative overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
         <div className="aspect-square overflow-hidden">
           <img
             src={artwork.imageUrl || "/placeholder.svg"}
@@ -57,9 +57,9 @@ function ArtworkCard({ artwork, index, onClick }) {
           />
         </div>
         <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-          <div className="p-4 text-white">
-            <h3 className="text-xl font-semibold">{artwork.title}</h3>
-            <p className="text-sm opacity-80">{artwork.medium}</p>
+          <div className="p-3 sm:p-4 text-white">
+            <h3 className="text-lg sm:text-xl font-semibold">{artwork.title}</h3>
+            <p className="text-xs sm:text-sm opacity-80">{artwork.medium}</p>
           </div>
         </div>
       </div>

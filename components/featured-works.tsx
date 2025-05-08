@@ -59,15 +59,10 @@ function FeaturedArtworkItem({ artwork, index, progress }) {
   })
 
   const x = useTransform(scrollYProgress, [0, 1], [isEven ? -100 : 100, 0])
-
   const opacity = useTransform(scrollYProgress, [0, 0.3, 1], [0, 1, 1])
 
   return (
-    <motion.div
-      ref={ref}
-      className={`grid md:grid-cols-2 gap-8 items-center ${isEven ? "" : "md:flex-row-reverse"}`}
-      style={{ opacity }}
-    >
+    <motion.div ref={ref} className="grid md:grid-cols-2 gap-6 md:gap-8 items-center" style={{ opacity }}>
       <motion.div
         className="overflow-hidden rounded-lg"
         style={{ x: isEven ? x : undefined }}
@@ -82,16 +77,18 @@ function FeaturedArtworkItem({ artwork, index, progress }) {
       </motion.div>
 
       <motion.div
-        className={`space-y-4 ${isEven ? "md:pl-8" : "md:pr-8 md:order-first"}`}
+        className={`space-y-4 ${isEven ? "md:pl-6" : "md:pr-6 md:order-first"}`}
         style={{ x: !isEven ? x : undefined }}
       >
-        <h3 className="text-2xl font-bold">{artwork.title}</h3>
-        <p className="text-muted-foreground">{artwork.description}</p>
+        <h3 className="text-xl sm:text-2xl font-bold">{artwork.title}</h3>
+        <p className="text-muted-foreground text-sm sm:text-base">{artwork.description}</p>
         <div className="flex flex-wrap gap-2">
-          <span className="inline-block px-3 py-1 text-sm rounded-full bg-primary/10 text-primary">
+          <span className="inline-block px-3 py-1 text-xs sm:text-sm rounded-full bg-primary/10 text-primary">
             {artwork.medium}
           </span>
-          <span className="inline-block px-3 py-1 text-sm rounded-full bg-primary/10 text-primary">{artwork.year}</span>
+          <span className="inline-block px-3 py-1 text-xs sm:text-sm rounded-full bg-primary/10 text-primary">
+            {artwork.year}
+          </span>
         </div>
         <Button asChild variant="link" className="p-0">
           <Link href={`/gallery`} className="group flex items-center">
