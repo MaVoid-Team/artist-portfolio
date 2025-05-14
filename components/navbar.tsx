@@ -43,7 +43,7 @@ export default function Navbar() {
     >
       <div className="container flex h-14 sm:h-16 items-center justify-between px-4 sm:px-6">
         <Link href="/" className="font-bold text-lg sm:text-xl">
-          ARTIST<span className="text-primary">PORTFOLIO</span>
+          Israa<span className="text-primary">Farahat</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-4 lg:gap-6">
@@ -69,7 +69,7 @@ export default function Navbar() {
           >
             <div className="container flex h-16 items-center justify-between">
               <Link href="/" className="font-bold text-xl">
-                ARTIST<span className="text-primary">PORTFOLIO</span>
+                Israa<span className="text-primary">Farahat</span>
               </Link>
               <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
                 <X className="h-6 w-6" />

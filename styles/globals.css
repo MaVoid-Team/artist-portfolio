@@ -84,6 +84,11 @@ body {
   }
 }
 
+::selection {
+  background-color: #00ffea; /* Example: #ffcc00 for yellow */
+  color: #000000; /* Example: #000000 for black */
+}
+
 @layer base {
   * {
     @apply border-border;

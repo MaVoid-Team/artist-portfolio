@@ -36,25 +36,25 @@ export default function Footer() {
           <div>
             <h4 className="font-medium text-sm mb-3">Social</h4>
             <nav className="grid gap-1.5">
-              <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="https://www.instagram.com/_esraafarahat/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Instagram
               </Link>
-              <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Twitter
+              <Link href="https://www.facebook.com/share/16BzzAaLk1/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                Facebook
               </Link>
-              <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              {/* <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Behance
               </Link>
               <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 LinkedIn
-              </Link>
+              </Link> */}
             </nav>
           </div>
 
           <div>
             <h4 className="font-medium text-sm mb-3">Contact</h4>
             <div className="grid gap-1.5 text-sm text-muted-foreground">
-              <p>artist@example.com</p>
+              <p>israa.frahat2015@gmail.com</p>
               <p>123 Art Street, Creative District</p>
               <p>Monday-Friday, 10am-6pm</p>
             </div>
@@ -63,7 +63,7 @@ export default function Footer() {
 
         <div className="border-t mt-6 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs sm:text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Artist Portfolio. All rights reserved.
+            © {new Date().getFullYear()} 
           </p>
           <div className="flex gap-4 text-xs sm:text-sm">
             <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">

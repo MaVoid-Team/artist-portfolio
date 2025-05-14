@@ -46,7 +46,7 @@ export default function AboutPage() {
             className="relative aspect-square rounded-lg overflow-hidden mt-6 md:mt-0"
           >
             <img
-              src="/placeholder.svg?height=800&width=800"
+              src="/perphoto.jpg?height=800&width=800"
               alt="Artist portrait"
               className="object-cover w-full h-full"
             />
@@ -91,7 +91,7 @@ export default function AboutPage() {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="space-y-8"
         >
-          <h2 className="text-3xl font-bold">Education & Experience</h2>
+          {/* <h2 className="text-3xl font-bold">Education & Experience</h2>
           <div className="grid gap-6">
             <div className="grid md:grid-cols-[200px_1fr] gap-4">
               <div className="font-medium">2010 - 2014</div>
@@ -114,7 +114,7 @@ export default function AboutPage() {
                 <p className="text-muted-foreground">Creative District Studio</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </motion.div>
 
         <motion.div
@@ -123,7 +123,7 @@ export default function AboutPage() {
           transition={{ duration: 0.5, delay: 1 }}
           className="space-y-8"
         >
-          <h2 className="text-3xl font-bold">Selected Exhibitions</h2>
+          {/* <h2 className="text-3xl font-bold">Selected Exhibitions</h2>
           <div className="grid gap-6">
             <div className="grid md:grid-cols-[200px_1fr] gap-4">
               <div className="font-medium">2023</div>
@@ -146,7 +146,7 @@ export default function AboutPage() {
                 <p className="text-muted-foreground">Solo Exhibition, Contemporary Space</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </motion.div>
 
         <div className="text-center pt-8">

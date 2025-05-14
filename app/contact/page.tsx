@@ -58,7 +58,7 @@ export default function ContactPage() {
               <p className="flex items-center gap-2">
                 <span className="font-medium">Email:</span>
                 <a href="mailto:artist@example.com" className="text-primary hover:underline">
-                  artist@example.com
+                  israa.frahat2015@gmail.com
                 </a>
               </p>
               <p className="flex items-center gap-2">
@@ -67,22 +67,22 @@ export default function ContactPage() {
               </p>
               <p className="flex items-center gap-2">
                 <span className="font-medium">Hours:</span>
-                <span>Monday-Friday, 10am-6pm</span>
+                <span>Always Available</span>
               </p>
             </div>
 
             <div className="pt-6">
               <h3 className="text-xl font-semibold mb-2">Follow</h3>
               <div className="flex gap-4">
-                <a href="#" className="hover:text-primary transition-colors">
+                <a href="https://www.instagram.com/_esraafarahat/" className="hover:text-primary transition-colors">
                   Instagram
                 </a>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Twitter
+                <a href="https://www.facebook.com/share/16BzzAaLk1/" className="hover:text-primary transition-colors">
+                  Facebook
                 </a>
-                <a href="#" className="hover:text-primary transition-colors">
+                {/* <a href="#" className="hover:text-primary transition-colors">
                   Behance
-                </a>
+                </a> */}
               </div>
             </div>
           </motion.div>

@@ -9,7 +9,7 @@ import { MouseFollower } from "@/components/mouse-follower"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Artist Portfolio",
+  title: "Israa Farahat",
   description: "Showcasing the artistic journey and creative works",
     generator: 'v0.dev'
 }
