@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import ArtworkModal from "@/components/artwork-modal"
 import { artworks } from "@/lib/data"
+import Image from "next/image"
 
 export default function GalleryPage() {
   const [selectedArtwork, setSelectedArtwork] = useState(null)
@@ -50,7 +51,7 @@ function ArtworkCard({ artwork, index, onClick }) {
     >
       <div className="relative overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
         <div className="aspect-square overflow-hidden">
-          <img
+          <Image
             src={artwork.imageUrl || "/placeholder.svg"}
             alt={artwork.title}
             className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"

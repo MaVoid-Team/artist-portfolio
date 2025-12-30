@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function AboutPage() {
   return (
@@ -45,7 +46,7 @@ export default function AboutPage() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="relative aspect-square rounded-lg overflow-hidden mt-6 md:mt-0"
           >
-            <img
+            <Image
               src="/perphoto.jpg?height=800&width=800"
               alt="Artist portrait"
               className="object-cover w-full h-full"

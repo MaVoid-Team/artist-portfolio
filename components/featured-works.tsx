@@ -6,6 +6,7 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { featuredArtworks } from "@/lib/data"
+import Image from "next/image"
 
 export default function FeaturedWorks() {
   const containerRef = useRef(null)
@@ -69,7 +70,7 @@ function FeaturedArtworkItem({ artwork, index, progress }) {
         whileHover={{ scale: 1.03 }}
         transition={{ duration: 0.3 }}
       >
-        <img
+        <Image
           src={artwork.imageUrl || "/placeholder.svg"}
           alt={artwork.title}
           className="w-full h-auto aspect-[4/3] object-cover"

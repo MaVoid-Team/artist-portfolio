@@ -4,6 +4,7 @@ import { useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function ArtworkModal({ artwork, onClose }) {
   // Close modal when pressing escape key
@@ -53,7 +54,7 @@ export default function ArtworkModal({ artwork, onClose }) {
 
           <div className="grid md:grid-cols-2 gap-0">
             <div className="bg-black flex items-center justify-center p-2 sm:p-4">
-              <img
+              <Image
                 src={artwork.imageUrl || "/placeholder.svg"}
                 alt={artwork.title}
                 className="max-h-[50vh] md:max-h-[70vh] w-auto object-contain"
