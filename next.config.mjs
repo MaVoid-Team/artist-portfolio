@@ -7,7 +7,8 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    loader: 'custom',
+    loaderFile: './image-loader.js'
   },
   output: 'export',
   basePath: "/artist-portfolio",

@@ -27,6 +27,7 @@ jobs:
       - name: Build Next.js (static export)
         run: npm run build
         env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           NODE_ENV: 'production'
 
       - name: Deploy to GitHub Pages
